@@ -20,6 +20,11 @@
                    string lastname = Console.ReadLine();
                     UC1.CheckLastName(lastname);
                     break;
+                case 3:
+                    Console.WriteLine("Enter the mail");
+                   string email = Console.ReadLine();
+                    UC1.CheckEmail(email);
+                    break;
 
             }
         }
