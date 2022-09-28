@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            Console.WriteLine("Choose an option:\n 1.First Name ");
+            Console.WriteLine("Choose an option:\n 1.First Name  \n 2.Last name");
             int result = Convert.ToInt32(Console.ReadLine());
 
             switch (result)
@@ -15,6 +15,12 @@
                     string firstname = Console.ReadLine();
                     UC1.CheckFirstName(firstname);
                     break;
+                case 2:
+                    Console.WriteLine("Enter your last name");
+                   string lastname = Console.ReadLine();
+                    UC1.CheckLastName(lastname);
+                    break;
+
             }
         }
     }
