@@ -5,7 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            Console.WriteLine("Choose an option:\n 1.First Name  \n 2.Last name");
+            Console.WriteLine("Choose an option:\n 1.First Name  \n 2.Last name" +
+                "");
             int result = Convert.ToInt32(Console.ReadLine());
 
             switch (result)
@@ -25,6 +26,12 @@
                    string email = Console.ReadLine();
                     UC1.CheckEmail(email);
                     break;
+                case 4:
+                    Console.WriteLine("Enter the phone number");
+                   string mobileNumber1 = Console.ReadLine();
+                    UC1.CheckMobileNumber(mobileNumber1);
+                    break;
+
 
             }
         }
